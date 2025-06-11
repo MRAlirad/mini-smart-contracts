@@ -71,7 +71,7 @@ contract BlindAuction {
                 if(placeBid(msg.sender, value))
                     refund -= value;
             }
-            
+
             // Make it impossible for the sender to re-claim
             // the same deposit.
             bidToCheck.blindedBid = bytes32(0);
